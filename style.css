@@ -1,0 +1,42 @@
+header {
+  text-align: center;
+  height: 15vh;
+}
+header + div {
+  height: 90%;
+}
+h5 {
+  color: #086350;
+  border-top: 1px solid rgb(246, 196, 48);
+  margin-top: 1em;
+}
+h5 span {
+  font-weight: bold;
+}
+#logo {
+  width: 25vh;
+  height: 100%;
+}
+main {
+  width: 50%;
+  margin: auto;
+}
+#img-focaccia {
+  width: 100%;
+  display: block;
+}
+.article {
+  text-align: center;
+}
+#h3 {
+  color: red;
+  margin-bottom: 0;
+}
+#featured p {
+  margin-top: 0;
+  color: #086350;
+}
+#featured {
+  border-left: 1px solid rgb(246, 196, 48);
+  padding-left: 1em;
+}
