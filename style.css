@@ -1,42 +1,118 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+/* impostiamo l'header */
 header {
-  text-align: center;
-  height: 15vh;
+  height: 17vh;
 }
-header + div {
-  height: 90%;
+#div-header {
+  height: 68%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.2em;
 }
-h5 {
-  color: #086350;
-  border-top: 1px solid rgb(246, 196, 48);
-  margin-top: 1em;
-}
-h5 span {
-  font-weight: bold;
+#div2-header {
+  height: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(245, 202, 44);
+  background-color: #fefbf1;
+  color: #004d4d;
 }
 #logo {
   width: 25vh;
-  height: 100%;
+  height: auto;
 }
+
+/* impostiamo altezza main e larghezza main e centriamo gli oggetti dentro esso*/
 main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 1.6em;
+}
+/* parte del main con gli elementi allineati al centro del div */
+.div-main-center {
   width: 50%;
-  margin: auto;
+  display: flex;
+  margin-top: 3em;
+  flex-direction: column;
+  align-items: center;
 }
-#img-focaccia {
+#video-focaccia {
   width: 100%;
-  display: block;
+  border-radius: 15px;
 }
-.article {
-  text-align: center;
+.div-main-center span {
+  margin: 1em;
+  color: rgb(204, 197, 197);
 }
-#h3 {
-  color: red;
-  margin-bottom: 0;
+.display-flex {
+  display: flex;
 }
-#featured p {
-  margin-top: 0;
-  color: #086350;
+/* parte del main con gli elementi allineati a sinistra nel div */
+.div-main-alignleft {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1em;
 }
-#featured {
-  border-left: 1px solid rgb(246, 196, 48);
+.div-main-alignleft h3 {
+  border-left: 1px solid rgb(245, 202, 44);
   padding-left: 1em;
+  color: red;
+  margin: 0;
+  font-weight: normal;
+}
+.color-link {
+  color: #0e9595;
+}
+.div-main-alignleft h2 {
+  font-weight: normal;
+  border-bottom: 1px solid #aaffff;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+li {
+  padding: 0.5em 0;
+}
+ol {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+ol li {
+  font-weight: bold;
+}
+ol + p {
+  margin: 0;
+  padding-left: 1.5em;
+}
+#first_h2 {
+  margin-top: 3em;
+}
+/* con una classe ..... contenete i due h2 non mi prendeva la modifica sulla pagina, ho dovuto fare due id */
+#second_h2 {
+  margin-top: 0;
+}
+#ricetta {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+#ricetta_2 {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+ul {
+  margin-top: 0;
 }
